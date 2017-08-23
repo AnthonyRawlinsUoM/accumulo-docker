@@ -1,6 +1,6 @@
 ## Single Node [Accumulo](https://accumulo.apache.org/) Instance On Docker
 
-This work is based on [https://github.com/medined/docker-accumulo](https://github.com/medined/docker-accumulo) - Thanks :-)
+This work is based on [https://github.com/mraad/docker-accumulo](https://github.com/mraad/docker-accumulo) - Thanks :-)
 
 If you are using [boot2docker](http://boot2docker.io/), then you might want to up the memory and storage space.
 
@@ -31,13 +31,13 @@ sysctl vm.swappiness
 ### Build the container image
 
 ```shell
-docker build -t mraad/accumulo .
+docker build -t anthonyrawlinsuom/accumulo .
 ```
 
 ### Run the container
 
 ```shell
-docker run --name accumulo -i -t -P mraad/accumulo /bin/bash
+docker run --name accumulo -i -t -P anthonyrawlinsuom/accumulo /bin/bash
 ```
 
 ### Start Zookeeper, YARN, HDFS and Accumulo
