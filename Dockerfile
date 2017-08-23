@@ -18,9 +18,9 @@ ENV ZOOKEEPER_HOME /usr/local/zookeeper
 ENV PATH $PATH:$ZOOKEEPER_HOME/bin
 ADD zookeeper/* $ZOOKEEPER_HOME/conf/
 
-RUN curl -s http://archive.apache.org/dist/accumulo/1.7.3/accumulo-1.7.3-bin.tar.gz | tar -xz -C /usr/local
-RUN ln -s /usr/local/accumulo-1.7.3 /usr/local/accumulo;\
- chown -R root:root /usr/local/accumulo-1.7.3
+RUN curl -s http://archive.apache.org/dist/accumulo/1.8.1/accumulo-1.8.1-bin.tar.gz | tar -xz -C /usr/local
+RUN ln -s /usr/local/accumulo-1.8.1 /usr/local/accumulo;\
+ chown -R root:root /usr/local/accumulo-1.8.1
 ENV ACCUMULO_HOME /usr/local/accumulo
 ENV PATH $PATH:$ACCUMULO_HOME/bin
 ADD accumulo/* $ACCUMULO_HOME/conf/
