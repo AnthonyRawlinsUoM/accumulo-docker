@@ -1,6 +1,6 @@
 FROM sequenceiq/hadoop-docker
 
-MAINTAINER @mraad <mraad@esri.com>
+MAINTAINER Anthony Rawlins <anthony.rawlins@unimelb.edu.au>
 
 USER root
 
